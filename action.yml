@@ -1,0 +1,17 @@
+name: 'Number-Kncht'
+description: 'Docker action for versioning'
+inputs:
+  custom-label:  # id of input
+    description: 'Custom label'
+    required: false
+    default: ''
+  label-style:  # id of input
+    description: 'Label style'
+    required: false
+    default: '0.0.0'
+outputs:
+  labels:
+    description: 'Labels output'
+runs:
+  using: 'node20'
+  main: 'index.js'
